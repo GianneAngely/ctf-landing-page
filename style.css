@@ -500,7 +500,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Changed to nowrap to prevent wrapping */
   gap: 20px;
   padding: 20px 0;
 }
@@ -514,6 +514,7 @@ header {
   transition: all 0.3s ease;
   object-fit: contain;
   margin: 0 15px;
+  max-width: 200px; /* Added to ensure logos don't stretch too wide */
 }
 .partner-logo.dark-bg {
   background-color: black;
